@@ -1,47 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>GPT Text Corrector</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="app">
-      <header class="header">
-        <h1>GPT Text Corrector</h1>
-        <p>Improve grammar, clarity, and tone</p>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <title>PolishText AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>PolishText AI</h1>
+      <p>Correct grammar, clarity, and tone</p>
+    </header>
 
-      <section class="card">
-        <div class="card-header">
-          <span>Input Text</span>
-          <span id="wordCount" class="word-count">0 words</span>
-        </div>
-        <textarea
-          id="inputText"
-          placeholder="Paste text or right-click select text to correct..."
-        ></textarea>
-      </section>
+    <section class="card">
+      <div class="card-header">
+        <span>Input Text</span>
+        <span id="wordCount">0 words</span>
+      </div>
+      <textarea id="inputText"
+        placeholder="Paste text or select text and right-click...">
+      </textarea>
+    </section>
 
-      <button id="correctBtn" class="primary-btn">Correct Text</button>
+    <button id="polishBtn">Polish Text</button>
 
-      <section class="card">
-        <div class="card-header">
-          <span>Corrected Output</span>
-          <button id="copyBtn" class="copy-btn" disabled>Copy</button>
-        </div>
-        <textarea
-          id="outputText"
-          placeholder="Corrected text will appear here..."
-          readonly
-        ></textarea>
-      </section>
+    <section class="card">
+      <div class="card-header">
+        <span>Polished Output</span>
+        <button id="copyBtn" disabled>Copy</button>
+      </div>
+      <textarea id="outputText" readonly></textarea>
+    </section>
 
-      <footer class="footer">
-        <span id="status"></span>
-      </footer>
-    </div>
+    <footer>
+      <span id="status"></span>
+    </footer>
+  </div>
 
-    <script src="popup.js"></script>
-  </body>
+  <script src="popup.js"></script>
+</body>
 </html>

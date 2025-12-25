@@ -1,15 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "GPT Text Corrector",
-  "version": "1.0",
-  "description": "Correct grammar, clarity, and tone using GPT",
+  "name": "PolishText AI",
+  "version": "1.0.0",
+  "description": "Correct and polish text using AI. Improve grammar, clarity, and tone instantly.",
   "permissions": [
     "storage",
     "contextMenus",
     "activeTab"
   ],
   "host_permissions": [
-    "https://api.openai.com/*"
+    "https://polish-text-ai-backend.onrender.com/*"
   ],
   "background": {
     "service_worker": "background.js"
